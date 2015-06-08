@@ -6,16 +6,15 @@
       <li>{{#link-to 'headlines'}}Home{{/link-to}}</li>
 </ul>
       {{#if isHovering}}
-      <div class="dropdown">
+      <div class="dropdown" {{action "toggleBack" on="mouseLeave"}}>
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-          <img src="images/social-buttons-color.png" {{action "toggleBack" on="mouseLeave"}} />
-
+          <img src="images/social-buttons-color.png" />
         </button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Facebook</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Twitter</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pinterest</a></li>
+
         </ul>
       </div>
       <!-- <div class="dropup">
@@ -31,7 +30,7 @@
         </ul>
       </div> -->
       {{else}}
-        <img src="images/social-buttons-gray.png" {{action "toggleSocialIcons" on="mouseEnter"}}/>
+        <img class="gray-image" src="images/social-buttons-gray.png" {{action "toggleSocialIcons" on="mouseEnter"}}/>
       {{/if}}
   </nav>
 

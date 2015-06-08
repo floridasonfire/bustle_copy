@@ -37,4 +37,16 @@ button, .btn, .btn-default {
   background: none;
   padding: 0px;
   box-shadow: none;
+  float:right;
+  outline: 0;
+  outline: none;
+}
+
+.dropdown-menu{
+  margin-top:6%;
+  margin-left:86%;
+}
+
+.gray-image{
+  float:right;
 }
