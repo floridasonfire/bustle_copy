@@ -6,6 +6,7 @@ Bustle.ApplicationController = Ember.Controller.extend({
     },
     toggleBack: function(){
       this.set('isHovering', false);
+      
     },
   }
 });
