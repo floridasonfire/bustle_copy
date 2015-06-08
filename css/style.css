@@ -1,0 +1,28 @@
+.row{
+  margin:10px;
+}
+
+.headlines {
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 10px;
+  text-align: center;
+  width:  40%;
+  margin: 1px 5%;
+}
+
+.item img{
+  margin:0 auto;
+}
+
+div img {
+  border-radius: 5px;
+}
+
+.logo-li{
+  margin-right:50px;
+}
+
+.logo-li img{
+  width:100px;
+}

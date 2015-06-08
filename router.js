@@ -1,9 +1,9 @@
-Blogger.Router.map(function() {
-  this.resource('posts', {path:'/'});
-  this.resource('about');
-  this.resource('contact', function(){
-    this.resource('phone');
-    this.resource('email');
-  });
+Bustle.Router.map(function() {
+  this.resource('headlines', {path:'/'});
+  this.resource('headline1');
+  this.resource('headline2');
+  this.resource('headline3');
+  this.resource('headline4');
+
 
 });

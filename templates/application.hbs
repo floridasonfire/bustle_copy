@@ -1,9 +1,15 @@
 <div class="container">
   <nav class="navbar navbar-default" role="navigation">
     <ul class="nav navbar-nav">
-      <li>{{#link-to 'posts'}}Posts{{/link-to}}</li>
-      <li>{{#link-to 'about'}}About{{/link-to}}</li>
-      <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+      <li class="logo-li"><img src="images/logo.png" /></li>
+
+      <li>{{#link-to 'headlines'}}Home{{/link-to}}</li>
+
+      {{#if isHovering}}
+        <li class="social-li"><img src="images/social-buttons-color.png" {{action "toggleBack" on="mouseLeave"}} /></li>
+      {{else}}
+        <li class="social-li"><img src="images/social-buttons-gray.png" {{action "toggleSocialIcons" on="mouseEnter"}}/></li>
+      {{/if}}
     </ul>
   </nav>
 
