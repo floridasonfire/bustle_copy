@@ -24,7 +24,9 @@ div img {
 }
 
 .logo-li img{
-  width:100px;
+  width:90px;
+  margin-top:10px;
+  padding:10px;
 }
 
 .navbar{
@@ -57,4 +59,48 @@ button, .btn, .btn-default {
   outline: none !important;
   border: none !important;
 
+}
+
+#my-carousel{
+  clear:both;
+}
+
+#my-carousel ul,
+#my-carousel li{
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+#my-carousel ul{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+#my-carousel li{
+    display: block;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 16%;
+    margin: 2%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+.carousel-indicators li{
+  background-color:transparent;
+  border-color:grey;
+}
+
+.carousel-indicators .active{
+  background-color:teal;
+}
+
+#myCarousel{
+  margin:0 auto;
+  width:45%;
 }
