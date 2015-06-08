@@ -28,5 +28,13 @@ div img {
 }
 
 .navbar{
-  height:100px;
+  /*height:100px;*/
+}
+
+button, .btn, .btn-default {
+  border:  none;
+  background-color: none;
+  background: none;
+  padding: 0px;
+  box-shadow: none;
 }
